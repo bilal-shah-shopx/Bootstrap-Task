@@ -1,0 +1,16 @@
+:root{
+    --dark-blue: #003D78;
+}
+
+@font-face {
+    font-family: custom-font;
+    src: url(../fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf);
+}
+
+.video-section{
+    background-color: var(--dark-blue);
+}
+
+.video-section h2{
+    color: var(--dark-blue);
+}
