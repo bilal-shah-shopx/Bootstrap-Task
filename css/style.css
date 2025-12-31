@@ -1,5 +1,9 @@
-:root{
+:root {
     --dark-blue: #003D78;
+    --bg-footer: #0E4F9A;
+    --light-grey: #F2F3F6;
+    --border-color: #E6E7EB;
+    --bg-icon: #1F3A5F;
 }
 
 @font-face {
@@ -7,10 +11,52 @@
     src: url(../fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf);
 }
 
-.video-section{
+.video-section,
+.benefits-section {
     background-color: var(--dark-blue);
 }
 
-.video-section h2{
+.video-section h2,
+.customers-review-section h1,
+.card-footer button {
     color: var(--dark-blue);
+}
+
+.customers-review-section {
+    background-color: var(--light-grey);
+}
+
+.card-footer {
+    background-color: var(--bg-footer);
+}
+
+.card,
+.card .border {
+    border-color: var(--border-color);
+    border-radius: 15px;
+}
+
+.dot-indicators .btn {
+    background-color: gray;
+}
+
+.dot-indicators .btn.active {
+    background-color: var(--dark-blue);
+}
+
+.benefits-section li img {
+    background-color: var(--bg-icon);
+}
+
+.benefits-section .hover-translate {
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+}
+
+.benefits-section .hover-translate:hover {
+    transform: translateX(10px);
+}
+
+.benefits-section .hover-scale:hover {
+    transform: scaleX(1.05);
 }
