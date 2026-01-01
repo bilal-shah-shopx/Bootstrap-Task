@@ -4,6 +4,7 @@
     --light-grey: #F2F3F6;
     --border-color: #E6E7EB;
     --bg-icon: #1F3A5F;
+    --border-list: rgba(0, 0, 0, 0.4);
 }
 
 @font-face {
@@ -18,7 +19,7 @@
 
 .video-section h2,
 .customers-review-section h1,
-.card-footer button {
+.customers-review-section .card-footer button {
     color: var(--dark-blue);
 }
 
@@ -26,7 +27,7 @@
     background-color: var(--light-grey);
 }
 
-.card-footer {
+.customers-review-section .card-footer {
     background-color: var(--bg-footer);
 }
 
@@ -57,6 +58,136 @@
     transform: translateX(10px);
 }
 
-.benefits-section .hover-scale:hover {
-    transform: scaleX(1.05);
+.benefits-section .hover-translate:hover .hover-scale {
+    transition: transform 0.6s ease;
+    transform-origin: center;
+    transform: scale(1.1);
+}
+
+.purchase-section h4 {
+    color: var(--bg-footer);
+}
+
+.purchase-section #thumbnail-list {
+    height: 467px;
+    scrollbar-width: none;
+}
+
+.purchase-section #thumbnail-list .thumbnail-btn {
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.purchase-section #thumbnail-list .thumbnail-btn:hover {
+    border-color: var(--border-list);
+}
+
+.purchase-section #thumbnail-list .thumbnail-btn.active {
+    border-color: var(--dark-blue);
+}
+
+.purchase-section #thumbnail-list .thumbnail-btn:focus,
+.purchase-section #thumb-up,
+.purchase-section #thumb-down,
+.purchase-section #oneTimeBtn,
+.purchase-section #subscribeBtn {
+    outline: none;
+    box-shadow: none;
+    border-color: inherit;
+}
+
+.purchase-section .thumbnail-btn.active {
+    border: 2px solid #0d4f9a;
+}
+
+.purchase-section .zoom-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.purchase-section .zoom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.15s ease-out;
+    transform-origin: center center;
+    cursor: zoom-in;
+}
+
+.purchase-section #carousel-purchase .carousel-item {
+    height: 400px;
+}
+
+.purchase-section #carousel-purchase img {
+    max-height: 100%;
+    width: auto;
+}
+
+.purchase-section .progress {
+    width: 230px;
+    height: 5px;
+}
+
+.purchase-section .progress-bar {
+    background-color: var(--dark-blue);
+    transition: width 0.4s ease;
+}
+
+.purchase-section .custom-btn {
+    background-color: var(--bg-footer);
+}
+
+.purchase-section .custom-btn-outline,
+.purchase-section .card {
+    border: 2px solid var(--bg-footer);
+    border-radius: 0px;
+}
+
+.purchase-section .card {
+    border: 4px solid var(--bg-footer);
+    border-radius: 0px;
+}
+
+.purchase-section .subs-left-card {
+    border-width: 2px;
+}
+
+.purchase-section .subs-center-card {
+    border-width: 2px 0;
+}
+
+.purchase-section .left-card {
+    height: 295px;
+    border-width: 2px 0px 2px 2px;
+}
+
+.purchase-section .right-card {
+    border-width: 2px 2px 2px 0px;
+}
+
+.purchase-section .card-top {
+    background-color: var(--bg-footer)
+}
+
+.purchase-section .card-title {
+    color: var(--bg-footer)
+}
+
+.purchase-section #oneTimeCards,
+.purchase-section #subscribeCards {
+    transition: opacity 0.3s ease;
+}
+
+.purchase-section #package-carousel .carousel-inner {
+    overflow: hidden;
+}
+
+.purchase-section #package-carousel .carousel-item .d-flex {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.purchase-section #package-carousel .carousel-img {
+    width: 172px;
+    height: 172px;
 }

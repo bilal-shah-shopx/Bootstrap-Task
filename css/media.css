@@ -1,0 +1,27 @@
+@media screen and (max-width: 576px) {
+    .zoom-container{
+        width:350px; 
+        height:350px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .zoom-container{
+        width:360px; 
+        height:360px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .zoom-container{
+        width:410px; 
+        height:410px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .zoom-container{
+        width:500px; 
+        height:500px;
+    }
+}
