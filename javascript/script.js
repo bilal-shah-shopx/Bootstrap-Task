@@ -10,7 +10,7 @@ thumbnails.forEach(btn => {
     });
 });
 
-// Scroll buttons
+// Scroll buttons for thumbnails
 const thumbList = document.getElementById('thumbnail-list');
 const btnUp = document.getElementById('thumb-up');
 const btnDown = document.getElementById('thumb-down');
@@ -78,36 +78,80 @@ carousel.addEventListener('slid.bs.carousel', (e) => {
     updateProgress(activeIndex);
 });
 
-// for toggle
- const oneTimeBtn = document.getElementById('oneTimeBtn');
-    const subscribeBtn = document.getElementById('subscribeBtn');
-    const oneTimeCards = document.getElementById('oneTimeCards');
-    const subscribeCards = document.getElementById('subscribeCards');
-    oneTimeBtn.addEventListener('click', () => {
-        oneTimeCards.classList.remove('d-none');
-        subscribeCards.classList.add('d-none');
-        oneTimeBtn.classList.add('custom-btn', 'text-light');
-        oneTimeBtn.classList.remove('custom-btn-outline');
-        subscribeBtn.classList.add('custom-btn-outline');
-        subscribeBtn.classList.remove('custom-btn', 'text-light');
-    });
-    subscribeBtn.addEventListener('click', () => {
-        subscribeCards.classList.remove('d-none');
-        oneTimeCards.classList.add('d-none');
-        subscribeBtn.classList.add('custom-btn', 'text-light');
-        subscribeBtn.classList.remove('custom-btn-outline');
-        oneTimeBtn.classList.add('custom-btn-outline');
-        oneTimeBtn.classList.remove('custom-btn', 'text-light');
-    });
-const carouselInner = document.querySelector('#package-carousel .carousel-item .d-flex');
-const images = document.querySelectorAll('#package-carousel .carousel-img');
-let index = 0;
-function slideCarousel() {
-  const imgWidth = images[0].offsetWidth + 10;
-  index++;
-  if (index > images.length - Math.floor(carouselInner.parentElement.offsetWidth / imgWidth)) {
-    index = 0;
-  }
-  carouselInner.style.transform = `translateX(-${index * imgWidth}px)`;
-}
-setInterval(slideCarousel, 2000);
+// for toggle large screens
+const oneTimeBtnLg = document.getElementById('oneTimeBtnLg');
+const subscribeBtnLg = document.getElementById('subscribeBtnLg');
+const oneTimeCardsLg = document.getElementById('oneTimeCardsLg');
+const subscribeCardsLg = document.getElementById('subscribeCardsLg');
+
+oneTimeBtnLg.addEventListener('click', () => {
+    oneTimeCardsLg.classList.remove('d-none');
+    oneTimeCardsLg.classList.add('d-lg-flex');
+    subscribeCardsLg.classList.add('d-none');
+    subscribeCardsLg.classList.remove('d-lg-flex');
+
+    oneTimeBtnLg.classList.add('custom-btn', 'text-light');
+    oneTimeBtnLg.classList.remove('custom-btn-outline');
+
+    subscribeBtnLg.classList.add('custom-btn-outline');
+    subscribeBtnLg.classList.remove('custom-btn', 'text-light');
+});
+
+subscribeBtnLg.addEventListener('click', () => {
+    subscribeCardsLg.classList.remove('d-none');
+    subscribeCardsLg.classList.add('d-lg-flex');
+    oneTimeCardsLg.classList.add('d-none');
+    oneTimeCardsLg.classList.remove('d-lg-flex');
+
+    subscribeBtnLg.classList.add('custom-btn', 'text-light');
+    subscribeBtnLg.classList.remove('custom-btn-outline');
+
+    oneTimeBtnLg.classList.add('custom-btn-outline');
+    oneTimeBtnLg.classList.remove('custom-btn', 'text-light');
+});
+
+
+// for medium screen
+const oneTimeBtn = document.getElementById('oneTimeBtn');
+const subscribeBtn = document.getElementById('subscribeBtn');
+const oneTimeCards = document.getElementById('oneTimeCards');
+const subscribeCards = document.getElementById('subscribeCards');
+
+oneTimeBtn.addEventListener('click', () => {
+    oneTimeCards.classList.remove('d-none');
+    subscribeCards.classList.add('d-none');
+
+    oneTimeBtn.classList.add('custom-btn', 'text-light');
+    oneTimeBtn.classList.remove('custom-btn-outline');
+
+    subscribeBtn.classList.add('custom-btn-outline');
+    subscribeBtn.classList.remove('custom-btn', 'text-light');
+});
+
+subscribeBtn.addEventListener('click', () => {
+    subscribeCards.classList.remove('d-none');
+    oneTimeCards.classList.add('d-none');
+
+    subscribeBtn.classList.add('custom-btn', 'text-light');
+    subscribeBtn.classList.remove('custom-btn-outline');
+
+    oneTimeBtn.classList.add('custom-btn-outline');
+    oneTimeBtn.classList.remove('custom-btn', 'text-light');
+});
+
+
+// Scroll buttons for package list
+
+const scrollAmount = document.querySelector('.carousel-img').offsetWidth + 8;
+
+const packageList = document.getElementById('package-carousel');
+const btnLeft = document.getElementById('swipe-left');
+const btnRight = document.getElementById('swipe-right');
+
+btnLeft.addEventListener('click', () => {
+    packageList.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+btnRight.addEventListener('click', () => {
+    packageList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});

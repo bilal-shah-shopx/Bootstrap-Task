@@ -5,6 +5,7 @@
     --border-color: #E6E7EB;
     --bg-icon: #1F3A5F;
     --border-list: rgba(0, 0, 0, 0.4);
+    --bg-blur: rgba(0, 0, 0, 0.2);
 }
 
 @font-face {
@@ -89,8 +90,12 @@
 .purchase-section #thumbnail-list .thumbnail-btn:focus,
 .purchase-section #thumb-up,
 .purchase-section #thumb-down,
+.purchase-section #swipe-left,
+.purchase-section #swipe-right,
 .purchase-section #oneTimeBtn,
-.purchase-section #subscribeBtn {
+.purchase-section #oneTimeBtnLg,
+.purchase-section #subscribeBtn,
+.purchase-section #subscribeBtnLg {
     outline: none;
     box-shadow: none;
     border-color: inherit;
@@ -157,7 +162,6 @@
 }
 
 .purchase-section .left-card {
-    height: 295px;
     border-width: 2px 0px 2px 2px;
 }
 
@@ -174,20 +178,23 @@
 }
 
 .purchase-section #oneTimeCards,
-.purchase-section #subscribeCards {
+.purchase-section #oneTimeCardsLg,
+.purchase-section #subscribeCards,
+.purchase-section #subscribeCardsLg {
     transition: opacity 0.3s ease;
 }
 
-.purchase-section #package-carousel .carousel-inner {
-    overflow: hidden;
+.purchase-section #package-carousel{
+    overflow-y: hidden;
+    max-width: 100%;
+    scrollbar-width: none;
 }
 
-.purchase-section #package-carousel .carousel-item .d-flex {
-    display: flex;
-    transition: transform 0.5s ease;
+.purchase-section .rotate-right{
+    transform: rotate(90deg);
 }
 
-.purchase-section #package-carousel .carousel-img {
-    width: 172px;
-    height: 172px;
+.purchase-section #swipe-left,
+.purchase-section #swipe-right {
+    background-color: var(--bg-blur);
 }

@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <section class="purchase-section">
-        <div class="container-fluid">
+    <section class="purchase-section mt-3">
+        <div class="container-fluid px-0">
             <div class="row d-md-none">
                 <div class="col-12">
                     <div
@@ -111,17 +111,200 @@
                         </div>
                         <div class="d-flex flex-column justify-content-center align-items-center mt-3">
                             <div class="progress">
-                                <div id="carousel-progress" class="progress-bar" role="progressbar" style="width:40%">
+                                <div id="carousel-progress" class="progress-bar" role="progressbar">
                                 </div>
                             </div>
                             <div class="text-center mb-3">Swipe to view more</div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 ps-4">
+                    <div class="text-center">
+                        <h4 class="fw-bold">Choose Your Package</h4>
+                        <p>Select your money-saving option below:</p>
+                    </div>
+                    <div class="d-none d-lg-flex gap-1">
+                        <button id="oneTimeBtnLg" class="btn w-100 custom-btn text-light">
+                            One-Time Purchase
+                        </button>
+                        <button id="subscribeBtnLg" class="btn w-100 custom-btn-outline">
+                            Subscribe & Save Up To 50%
+                        </button>
+                    </div>
+                    <div class="d-lg-none d-flex gap-1">
+                        <button id="oneTimeBtn" class="btn w-100 custom-btn text-light">
+                            One-Time Purchase
+                        </button>
+                        <button id="subscribeBtn" class="btn w-100 custom-btn-outline">
+                            Subscribe & Save Up To 50%
+                        </button>
+                    </div>
+                    <div class="d-flex flex-column gap-4 mb-3">
+                        <!--One-Time Purchase Cards-->
+                        <div id="oneTimeCards"
+                            class="d-lg-none d-flex flex-column w-100 mt-3 align-items-center flex-1 align-items-stretch gap-1">
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/1bag.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-between w-100">
+                                    <div>
+                                        <div class="d-flex flex-column">
+                                            <h2 class="card-title fw-bold fs-5 mb-0">1 Bag</h2>
+                                            <h2 class="card-body fw-bold d-flex mb-0 ps-0 fs-5">
+                                                $49</h2>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer p-0 pe-4 me-5 w-25">
+                                        <button class="btn btn-success">CHOOSE FLAVOR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">3 Bags</h2>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$31 Per Bag</h2>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 28%)</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/6bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">6 Bags</h2>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$31 Per Bag</h2>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 36%)</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Subscribe & Save Cards -->
+                        <div id="subscribeCards"
+                            class="d-none d-flex flex-column w-100 mt-3 align-items-center flex-1 align-items-stretch gap-1">
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/1bag.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">1 Bag</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 1 Month</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$29.40</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 40%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">3 Bags</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 3 Months</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$26.95</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 45%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">6 Bags</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 6 Months</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$24.50</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 50%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center position-relative">
+                            <!-- Previous Button -->
+                            <button class="btn text-white border-0 position-absolute top-50 start-0 translate-middle-y ms-2 z-3" id="swipe-left">
+                                <svg class="rotate-right" width="10" height="80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <!-- Feedback List -->
+                            <div id="package-carousel">
+                                <div class="d-flex gap-1">
+                                    <img src="images/PT_1.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_2.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_3.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_4.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_5.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_6.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_7.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_8.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_9.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_10.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_11.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_12.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_13.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_14.1.png" class="img-fluid carousel-img">
+                                </div>
+                            </div>
+
+                            <!-- Next Button -->
+                            <button class="btn text-white border-0 position-absolute top-50 end-0 translate-middle-y me-2 z-3" id="swipe-right">
+                                <svg class="rotate-right" width="10" height="80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 15l7-7 7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row d-none d-md-flex justify-content-start g-0">
-                <div class="col-auto d-flex flex-column align-items-center gap-1">
+                <div class="col-md-1 col-lg-auto d-flex flex-column align-items-center gap-1">
                     <!-- UP Button -->
                     <button class="btn btn-success d-flex align-items-center justify-content-center w-100"
                         id="thumb-up">
@@ -187,7 +370,7 @@
                 </div>
 
                 <!-- Main Image Column -->
-                <div class="col-auto col-md-6 col-lg-5 col-xl-auto d-flex flex-column align-items-center ps-2">
+                <div class="col-md-6 col-lg-auto col-lg-5 col-xl-auto d-flex flex-column align-items-center ps-0">
 
                     <!-- Product Title -->
                     <h4 class="fw-bold m-0 text-md-center text-xl-start">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h4>
@@ -227,61 +410,128 @@
                         <img id="main-img" src="images/PT_1.1.png" class="img-fluid zoom-img">
                     </div>
                 </div>
-                <div class="col-6">
+
+                <div class="col-md-5 col-xl-6">
                     <div class="text-center">
                         <h4 class="fw-bold">Choose Your Package</h4>
                         <p>Select your money-saving option below:</p>
                     </div>
-                    <div class="d-flex gap-1">
+                    <div class="d-none d-lg-flex gap-1">
+                        <button id="oneTimeBtnLg" class="btn w-100 custom-btn text-light">
+                            One-Time Purchase
+                        </button>
+                        <button id="subscribeBtnLg" class="btn w-100 custom-btn-outline">
+                            Subscribe & Save Up To 50%
+                        </button>
+                    </div>
+                    <div class="d-lg-none d-flex gap-1">
                         <button id="oneTimeBtn" class="btn w-100 custom-btn text-light">
                             One-Time Purchase
                         </button>
                         <button id="subscribeBtn" class="btn w-100 custom-btn-outline">
-                            Subscribe & Save upto 50%
+                            Subscribe & Save Up To 50%
                         </button>
                     </div>
                     <div class="d-flex flex-column gap-4 mb-3">
                         <!--One-Time Purchase Cards-->
-                        <div id="oneTimeCards" class="d-flex w-100 mt-3 align-items-center">
+                        <div id="oneTimeCardsLg" class="d-none d-lg-flex w-100 mt-3 align-items-center ">
                             <div class="card py-3 px-2 flex-fill text-center left-card">
-                                <h2 class="card-title fw-bold">1 Bag</h2>
-                                <h2
-                                    class="card-body fw-bold flex-grow-1 d-flex align-items-center justify-content-center">
-                                    $49</h2>
+                                <div>
+                                    <h2 class="card-title fw-bold">1 Bag</h2>
+                                    <h2
+                                        class="card-body fw-bold flex-grow-1 d-flex align-items-center justify-content-center">
+                                        $49</h2>
+                                </div>
                                 <div class="card-footer p-0">
                                     <button class="btn btn-success w-100">CHOOSE FLAVOR</button>
                                 </div>
                             </div>
-                            <div class="card pb-3 h-100 flex-fill text-center popular-card">
-                                <h5 class="card-top text-white py-2">Most Popular</h5>
-                                <h2 class="card-title fw-bold">3 Bags</h2>
-                                <div
-                                    class="card-body flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                                    <h5 class="text-decoration-line-through">$49</h5>
-                                    <h2 class="fw-bold text-success">$35</h2>
-                                    <h5 class="fw-bold text-success">Per Bag</h5>
-                                    <h5 class="text-danger">(Save 28%)</h5>
+                            <div class="card pb-3 h-lg-100 flex-fill text-center popular-card">
+                                <div>
+                                    <h5 class="card-top text-white py-2 ">Most Popular</h5>
+                                    <h2 class="card-title fw-bold">3 Bags</h2>
+                                    <div
+                                        class="card-body flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                                        <h5 class="text-decoration-line-through">$49</h5>
+                                        <h2 class="fw-bold text-success">$35</h2>
+                                        <h5 class="fw-bold text-success">Per Bag</h5>
+                                        <h5 class="text-danger">(Save 28%)</h5>
+                                    </div>
                                 </div>
                                 <div class="card-footer mx-3 p-0">
                                     <button class="btn btn-success w-100">CHOOSE FLAVORS</button>
                                 </div>
                             </div>
-                            <div class="card py-3 px-2 h-100 flex-fill text-center right-card">
-                                <h2 class="card-title fw-bold">6 Bags</h2>
-                                <div
-                                    class="card-body flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-                                    <h5 class="text-decoration-line-through">$49</h5>
-                                    <h2 class="fw-bold text-success">$31</h2>
-                                    <h5 class="fw-bold text-success">Per Bag</h5>
-                                    <h5 class="text-danger">(Save 36%)</h5>
+                            <div class="card py-3 px-2 h-lg-100 flex-fill text-center right-card">
+                                <div>
+                                    <h2 class="card-title fw-bold">6 Bags</h2>
+                                    <div
+                                        class="card-body flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                                        <h5 class="text-decoration-line-through">$49</h5>
+                                        <h2 class="fw-bold text-success">$31</h2>
+                                        <h5 class="fw-bold text-success">Per Bag</h5>
+                                        <h5 class="text-danger">(Save 36%)</h5>
+                                    </div>
                                 </div>
                                 <div class="card-footer p-0">
                                     <button class="btn btn-success w-100">CHOOSE FLAVORS</button>
                                 </div>
                             </div>
                         </div>
+                        <div id="oneTimeCards"
+                            class="d-lg-none d-flex flex-column w-100 mt-3 align-items-center flex-1 align-items-stretch gap-1">
+                            <div class="card py-1 px-0 d-flex flex-row align-items-center flex-fill text-center">
+                                <div>
+                                    <img src="images/1bag.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-5 align-items-center">
+                                    <div class="d-flex flex-column align-items-center justify-content-center">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">1 Bag</h2>
+                                        <h2 class="card-body fw-bold d-flex mb-0 fs-5">
+                                            $49</h2>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVOR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">3 Bags</h2>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$31 Per Bag</h2>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 28%)</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/6bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">6 Bags</h2>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$31 Per Bag</h2>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 36%)</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Subscribe & Save Cards -->
-                        <div id="subscribeCards" class="d-flex w-100 mt-2 align-items-center d-none">
+                        <div id="subscribeCardsLg" class="d-none w-100 mt-2 align-items-center">
                             <div class="card py-3 px-2 h-100 flex-fill text-center subs-left-card">
                                 <h2 class="card-title fw-bold">1 Bag</h2>
                                 <h4 class="card-title fw-light">Every 1 Month</h4>
@@ -315,7 +565,7 @@
                             <div class="card pb-3 h-100 flex-fill text-center savings-card">
                                 <h5 class="card-top text-white py-2">Most Savings</h5>
                                 <h2 class="card-title fw-bold">6 Bags</h2>
-                                <h4 class="card-title fw-light">Every 6 Month</h4>
+                                <h4 class="card-title fw-light">Every 6 Months</h4>
                                 <div
                                     class="card-body flex-grow-1 d-flex flex-column align-items-center justify-content-center">
                                     <h5 class="text-decoration-line-through">$49</h5>
@@ -329,28 +579,108 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="package-carousel" class="carousel slide" data-bs-ride="carousel"
-                            data-bs-interval="2000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-flex gap-1">
-                                        <img src="images/PT_1.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_2.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_3.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_4.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_5.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_6.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_7.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_8.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_9.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_10.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_11.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_12.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_13.1.png" class="img-fluid carousel-img">
-                                        <img src="images/PT_14.1.png" class="img-fluid carousel-img">
+                        <div id="subscribeCards"
+                            class="d-none d-flex flex-column w-100 mt-3 align-items-center flex-1 align-items-stretch gap-1">
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/1bag.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">1 Bag</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 1 Month</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$29.40</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 40%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">3 Bags</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 3 Months</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$26.95</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 45%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card px-0 d-flex flex-row align-items-center">
+                                <div>
+                                    <img src="images/3bags.png" width="90" height="90">
+                                </div>
+                                <div class="d-flex flex-row gap-2 align-items-center">
+                                    <div
+                                        class="card-body g-0 d-flex flex-column align-items-start justify-content-start px-0 py-1 w-100">
+                                        <h2 class="card-title fw-bold fs-5 mb-0">6 Bags</h2>
+                                        <h4 class="card-title fw-light fs-5 mb-0">Every 6 Months</h4>
+                                        <h5 class="text-decoration-line-through fs-5 mb-0">$49</h5>
+                                        <h2 class="fw-bold text-success fs-5 mb-0">$24.50</h2>
+                                        <h5 class="fw-bold text-success fs-5 mb-0">Per Bag</h5>
+                                        <h5 class="text-danger fs-5 mb-0">(Save 50%)</h5>
+                                        <h5>+ FREE SHIPPING</h5>
+                                    </div>
+                                    <div class="card-footer p-0 me-1">
+                                        <button class="btn btn-success">CHOOSE FLAVORS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center position-relative">
+                            <!-- Previous Button -->
+                            <button class="btn text-white border-0 position-absolute top-50 start-0 translate-middle-y ms-2 z-3" id="swipe-left">
+                                <svg class="rotate-right" width="10" height="80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <!-- Feedback List -->
+                            <div id="package-carousel">
+                                <div class="d-flex gap-1">
+                                    <img src="images/PT_1.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_2.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_3.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_4.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_5.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_6.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_7.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_8.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_9.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_10.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_11.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_12.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_13.1.png" class="img-fluid carousel-img">
+                                    <img src="images/PT_14.1.png" class="img-fluid carousel-img">
+                                </div>
+                            </div>
+
+                            <!-- Next Button -->
+                            <button class="btn text-white border-0 position-absolute top-50 end-0 translate-middle-y me-2 z-3" id="swipe-right">
+                                <svg class="rotate-right" width="10" height="80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 15l7-7 7 7">
+                                    </path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
