@@ -1,46 +1,1046 @@
 @media screen and (max-width: 576px) {
-    .zoom-container{
-        width:350px; 
-        height:350px;
+
+    /*Video Section */
+    .video-section {
+        min-height: 843px;
+        height: auto;
+        width: 100%;
+        max-width: 425px;
     }
+
+    .video-section .container {
+        width: 100%;
+        max-width: 425px;
+        min-height: 795px;
+        height: auto;
+    }
+
+    .video-section .video-col {
+        width: 100%;
+        max-width: 393px;
+        min-height: 235px;
+        height: auto;
+    }
+
+    .video-section .text-col {
+        width: 100%;
+        max-width: 393px;
+        min-height: 560px;
+        height: auto;
+    }
+
+    .video-section .video-col div iframe {
+        width: 100%;
+        max-width: 393px;
+        min-height: 236px;
+        height: auto;
+    }
+
+    .video-section .text-col .text-part {
+        width: 100%;
+        max-width: 329px;
+    }
+
+    .video-section .p-32 {
+        padding: 32px;
+    }
+
+    .video-section .text-col h2 {
+        font-size: 24px;
+    }
+
+    /* Customers Review Section */
+    .customers-review-section h2 {
+        font-size: 30px;
+    }
+
+    .customers-review-section .card-body p {
+        font-size: 14px;
+    }
+
+    .customers-review-section .card-body small {
+        font-size: 12px;
+    }
+
+    .customers-review-section .card-body .verified {
+        width: 100%;
+        max-width: 16px;
+        min-height: 16px;
+        height: auto;
+    }
+
+    .customers-review-section .carousel-next-btn,
+    .customers-review-section .carousel-prev-btn {
+        width: 100%;
+        max-width: 32px;
+        min-height: 32px;
+        height: auto;
+    }
+
+    /*Benefits Section*/
+    .benefits-section h2 {
+        font-size: 30px;
+        font-family: Helvetica;
+    }
+
+    .benefits-section .main p {
+        font-size: 18px;
+    }
+
+    .benefits-section .container-fluid {
+        max-width: 425px;
+        width: 100%;
+        min-height: 1017px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img {
+        width: 100%;
+        max-width: 373px;
+        min-height: 365px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img img {
+        width: 100%;
+        max-width: 320px;
+        min-height: 320px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img svg {
+        bottom: 24px;
+    }
+
+    .benefits-section h3 {
+        font-size: 16px;
+    }
+
+    .benefits-section p {
+        font-size: 14px;
+    }
+
+
+    .benefits-section ul li>div:first-child {
+        width: 48px;
+        height: 48px;
+    }
+
+    .benefits-section #l1{
+        width: 95px;
+    }
+
+    .benefits-section #l2{
+        width: 61px;
+    }
+
+     .benefits-section #l3{
+        width: 68px;
+    }
+
+    .benefits-section #l4{
+        width: 70px;
+    }
+
+    .benefits-section ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /*Purchase Section*/
+    .purchase-section .product-info .main-heading{
+        font-size: 24px;
+    }
+
+    .purchase-section .product .main-heading{
+        font-size: 20px;
+        width: 280px;
+        height: 75px;
+    }
+
+    .purchase-section .product .carousel-inner img{
+        width: 350px;
+        height: 350px;
+    }
+
+     .purchase-section .product-info{
+    }
+
+    .purchase-section #oneTimeBtn, #subscribeBtn{
+        padding: 10px 8px;
+    }
+    .purchase-section .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .purchase-section h2.bag{
+        font-size: 20px;
+    }
+     .purchase-section .org-price{
+        font-size: 18px;
+    }
+
+    .purchase-section h2.price{
+        font-size: 20px;
+    }
+
+    .purchase-section h5.save{
+        font-size: 16px;
+    }
+
+    .purchase-section span.per-bag{
+        font-size: 14px;
+    }
+
+    .purchase-section h4.month{
+        font-size: 14px;
+    }
+     .purchase-section .free-text{
+        font-size: 12px;
+    }
+
+    .purchase-section #oneTimeCards button, .purchase-section #subscribeCards button{
+        width: 84.63px;
+        height: 51px;
+        font-size: 14px;
+    }
+     .purchase-section .popular-text{
+        font-size: 12px;
+    }
+
     .purchase-section #package-carousel .carousel-img {
-    width: 133px;
-    height: 133px;
+        width: 100%;
+        max-width: 98.25px;
+        min-height: 98.25px;
+        height: auto;
+    }
+
+
+    .purchase-section #swipe-left, .purchase-section #swipe-right{
+        width: 20x;
+        height: 98.25px;
+    }
+
+    .purchase-section .rotate-right {
+        width: 20px;
+        height: 20px;
+    }
+
+    .purchase-section .feedback-list{
+        height: 113.25px;
+    }
+
+    .purchase-section .zoom-container {
+        width: 100%;
+        max-width: 350px;
+        min-height: 350px;
+        height: auto;
+    }
+
+    .purchase-section .carousel-purchase-next-btn,
+    .purchase-section .carousel-purchase-prev-btn {
+        width: 100%;
+        max-width: 32px;
+        min-height: 32px;
+        height: auto;
+    }
+
+    .purchase-section #carousel-purchase .counter{
+        font-size: 14px;
+    }
+
+    .purchase-section #swipe-text{
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .zoom-container{
-        width:360px; 
-        height:360px;
+
+    /*Video Section*/
+    .video-section {
+        height: 690px;
     }
+
+    .video-section .container {
+        width: 100%;
+        height: 636px;
+    }
+
+    .video-section .video-col,
+    .video-section .text-col {
+        height: 636px;
+    }
+
+    .video-section .video-col div {
+        width: 100%;
+        max-width: 336px;
+        height: 604px;
+    }
+
+    .video-section .text-col .text-part {
+        width: 100%;
+        max-width: 272px;
+    }
+
+    /* Customers Review Section */
+    .customers-review-section h2 {
+        font-size: 36px;
+    }
+
+    .customers-review-section .container-fluid {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .customers-review-section .card {
+        min-height: 622px;
+        height: auto;
+    }
+
+    .customers-review-section .card-img {
+        width: 100%;
+        max-width: 142px;
+        min-height: 154px;
+        height: auto;
+        padding: 12px;
+        margin: 12px 12px 0px 12px;
+    }
+
+    .customers-review-section .card-img-top {
+        width: 100%;
+        max-width: 114px;
+        min-height: 126px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .customers-review-section .card-title {
+        margin-bottom: 12px;
+    }
+
+    .customers-review-section .card-text {
+        margin-bottom: 16px;
+        line-height: 20px;
+    }
+
+    .customers-review-section .card-body {
+        padding: 12px 12px 14px;
+    }
+
+    .customers-review-section .card-footer {
+        padding: 16px 12px;
+    }
+
+    .customers-review-section .card-footer small {
+        font-size: 12px;
+    }
+
+    .customers-review-section .card-footer .btn {
+        padding: 0px 10px;
+    }
+
+    /*Benefits Section*/
+    .benefits-section h2 {
+        font-size: 36px;
+        font-family: Helvetica;
+    }
+
+    .benefits-section .main p {
+        font-size: 24px;
+    }
+
+    .benefits-section .container-fluid {
+        max-width: 736px;
+        width: 100%;
+        min-height: 800px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img {
+        width: 100%;
+        max-width: 420px;
+        min-height: 420px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img img {
+        width: 100%;
+        max-width: 400px;
+        min-height: 400px;
+        height: auto;
+    }
+
+    .benefits-section h3 {
+        font-size: 18px;
+    }
+
+    .benefits-section p {
+        font-size: 16px;
+    }
+
+
+    .benefits-section ul li>div:first-child {
+        width: 56px;
+        height: 56px;
+    }
+
+    .benefits-section #l1{
+        width: 189px;
+    }
+
+    .benefits-section #l2{
+        width: 122px;
+    }
+
+     .benefits-section #l3{
+        width: 135px;
+    }
+
+    .benefits-section #l4{
+        width: 140px;
+    }
+
+    .benefits-section ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /*Purchase Section*/
+     .purchase-section .product-info{
+        height: 811px;
+    }
+     .purchase-section .thumnail-col{
+        width: 102px;
+        height: 560px;
+    }
+     .purchase-section #thumb-up, .purchase-section #thumb-down{
+        width: 102px;
+        height: 32px;
+    }
+    .purchase-section #thumbnail-list button{
+        padding: 7px;
+        width: 94px;
+        height: 94px;
+    }
+    .purchase-section #thumbnail-list img{
+        width: 76px;
+        height: 76px;
+    }
+
+    .purchase-section #thumbnail-list {
+    height: 485px;
+    scrollbar-width: none;
+}
+    .purchase-section #oneTimeBtnLg, #subscribeBtnLg{
+        padding: 10px 16px;
+    }
+
+    .purchase-section h2.bag{
+        font-size: 20px;
+    }
+
+    .purchase-section h2.price{
+        font-size: 20px;
+    }
+
+    .purchase-section h5.save{
+        font-size: 16px;
+    }
+
+    .purchase-section span.per-bag{
+        font-size: 14px;
+    }
+
+    .purchase-section h4.month{
+        font-size: 14px;
+    }
+
+    .purchase-section .card {
+        width: 300px;
+        min-height: 160px;
+        height: auto;
+    }
+
+    .purchase-section .card-1 {
+        min-height: 106px;
+        height: auto;
+    }
+
+    .purchase-section .card-2 {
+        min-height: 148.5px;
+        height: auto;
+    }
+    .purchase-section .card-3 {
+        min-height: 128.5px;
+        height: auto;
+    }
+
+    .purchase-section .subs-card-1 {
+        min-height: 176px;
+        height: auto;
+    }
+
+    .purchase-section .card-2 {
+        min-height: 213px;
+        height: auto;
+    }
+    .purchase-section .card-3 {
+        min-height: 213px;
+        height: auto;
+    }
+
+    .purchase-section .org-price{
+        font-size: 18px;
+    }
+
+    .purchase-section #swipe-left, .purchase-section #swipe-right{
+        width: 20x;
+        height: 68px;
+    }
+
+    .purchase-section .rotate-right {
+        width: 20px;
+        height: 20px;
+    }
+
+    .purchase-section .free-text{
+        font-size: 12px;
+    }
+
+    .purchase-section .feedback-list{
+        height: 83px;
+    }
+
+
+    .purchase-section .zoom-container {
+        width: 100%;
+        max-width: 360px;
+        min-height: 360px;
+        height: auto;
+    }
+
     .purchase-section #package-carousel .carousel-img {
-    width: 68.8px;
-    height: 68.8px;
+        width: 100%;
+        max-width: 68.8px;
+        min-height: 68.8px;
+        height: auto;
+    }
+    .purchase-section #oneTimeCards button{
+        width: 88.98px;
+        height: 51px;
+        font-size: 14px;
+    }
+    .purchase-section .popular-text{
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .zoom-container{
-        width:410px; 
-        height:410px;
+
+    /*Video Section*/
+    .video-section {
+        height: 636px;
     }
+
+    .video-section .container {
+        width: 100%;
+        height: 572px;
+    }
+
+    .video-section .video-col,
+    .video-section .text-col {
+        height: 572px;
+    }
+
+    .video-section .video-col div {
+        max-width: 100%;
+        max-width: 464px;
+        height: 540px;
+    }
+
+    .video-section .text-col .text-part {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Customers Review Section */
+    .customers-review-section h2 {
+        font-size: 36px;
+    }
+
+    .customers-review-section .container-fluid {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .customers-review-section .card {
+        min-height: 595px;
+        height: auto;
+    }
+
+    .customers-review-section .card-img {
+        width: 100%;
+        max-width: 206px;
+        min-height: 218px;
+        height: auto;
+        padding: 12px;
+        margin: 12px 12px 0px 12px;
+    }
+
+    .customers-review-section .card-img-top {
+        width: 100%;
+        max-width: 178px;
+        min-height: 190px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .customers-review-section .card-title {
+        margin-bottom: 12px;
+    }
+
+    .customers-review-section .card-text {
+        margin-bottom: 16px;
+        line-height: 20px;
+    }
+
+    .customers-review-section .card-body {
+        padding: 12px 12px 24px;
+    }
+
+    .customers-review-section .card-footer {
+        padding: 16px 12px;
+    }
+
+    .customers-review-section .card-footer small {
+        font-size: 12px;
+    }
+
+    .customers-review-section .card-footer .btn {
+        padding: 0px 10px;
+    }
+
+    /*Benefits Section*/
+    .benefits-section h2 {
+        font-size: 48px;
+        font-family: Helvetica;
+    }
+
+    .benefits-section .main p {
+        font-size: 24px;
+    }
+
+    .benefits-section .container-fluid {
+        max-width: 992px;
+        width: 100%;
+        min-height: 500px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img {
+        width: 100%;
+        max-width: 550px;
+        min-height: 550px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img img {
+        width: 100%;
+        max-width: 500px;
+        min-height: 500px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img svg {
+        bottom: 24px;
+        left: 2px;
+    }
+
+    .benefits-section h3 {
+        font-size: 18px;
+    }
+
+    .benefits-section p {
+        font-size: 16px;
+    }
+
+
+    .benefits-section ul li>div:first-child {
+        width: 56px;
+        height: 56px;
+    }
+
+    .benefits-section #l1{
+        width: 121px;
+    }
+
+    .benefits-section #l2{
+        width: 78px;
+    }
+
+     .benefits-section #l3{
+        width: 86px;
+    }
+
+    .benefits-section #l4{
+        width: 89px;
+    }
+
+    .benefits-section ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /*Purchase Section*/
+
+    .purchase-section .product-info{
+        height: 834px;
+    }
+     .purchase-section .thumnail-col{
+        width: 102px;
+        height: 560px;
+    }
+     .purchase-section #thumb-up, .purchase-section #thumb-down{
+        width: 102px;
+        height: 32px;
+    }
+    .purchase-section #thumbnail-list button{
+        padding: 7px;
+        width: 94px;
+        height: 94px;
+    }
+    .purchase-section #thumbnail-list img{
+        width: 76px;
+        height: 76px;
+    }
+
+    .purchase-section #thumbnail-list {
+    height: 485px;
+    scrollbar-width: none;
+}
+    .purchase-section #oneTimeBtnLg, #subscribeBtnLg{
+        padding: 10px 16px;
+    }
+
+    .purchase-section h2.price{
+        font-size: 36px;
+    }
+
+    .purchase-section .card {
+        width: 237px;
+        min-height: 306px;
+        height: auto;
+    }
+
+    .purchase-section .popular-card {
+        min-height: 330px;
+        height: auto;
+    }
+
+    .purchase-section .org-price{
+        font-size: 24px;
+    }
+
+    .purchase-section #swipe-left, .purchase-section #swipe-right{
+        width: 40x;
+        height: 120px;
+    }
+
+    .purchase-section .rotate-right {
+        width: 30px;
+        height: 30px;
+    }
+
+    .purchase-section .zoom-container {
+        width: 100%;
+        max-width: 410px;
+        height: 410px;
+        min-height: auto;
+    }
+
     .purchase-section #package-carousel .carousel-img {
-    width: 120px;
-    height: 120px;
+        width: 100%;
+        max-width: 120px;
+        min-height: 120px;
+        height: auto;
+    }
+
+    .purchase-section .free-text{
+        font-size: 16px;
+    }
+    .purchase-section .subs-left-card, .purchase-section .subs-center-card {
+        width: 168px;
+        height: 442px;
+    }
+    .purchase-section .savings-card{
+        width: 168px;
+        height: 466px;
+    }
+    .purchase-section .feedback-list{
+        height: 135px;
+    }
 }
-.purchase-section .left-card {
-    height: 295px;
-}
+
+@media screen and (min-width: 1200px) {
+
+    /*Video Section*/
+    .video-section {
+        height: 540px;
+    }
+
+    .video-section .container {
+        width: 100%;
+        max-width: 1120px;
+        height: 480px;
+    }
+
+    .video-section .video-col,
+    .video-section .text-col {
+        height: 480px;
+    }
+
+    .video-section .video-col div {
+        width: 100%;
+        max-width: 528px;
+        height: 448px;
+    }
+
+    .video-section .text-col .text-part {
+        width: 100%;
+        max-width: 464px;
+    }
+
+    .customers-review-section .card {
+        min-height: 610px;
+        height: auto;
+    }
+
+    /* Customers Review Section */
+    .customers-review-section h2 {
+        font-size: 36px;
+    }
+
+    .customers-review-section .container-fluid {
+        width: 100%;
+        max-width: 1280px;
+    }
+
+    .customers-review-section .card-img {
+        width: 100%;
+        max-width: 270px;
+        min-height: 282px;
+        height: auto;
+        padding: 12px;
+        margin: 12px 12px 0px 12px;
+    }
+
+    .customers-review-section .card-img-top {
+        width: 100%;
+        max-width: 242px;
+        height: 254px;
+        object-fit: cover;
+    }
+
+    .customers-review-section .card-title {
+        margin-bottom: 12px;
+    }
+
+    .customers-review-section .card-text {
+        margin-bottom: 16px;
+    }
+
+    .customers-review-section .card-body {
+        padding: 12px 12px 24px;
+    }
+
+    .customers-review-section .card-footer {
+        padding: 16px 12px;
+    }
+
+    .customers-review-section .card-footer small {
+        font-size: 12px;
+    }
+
+    .customers-review-section .card-footer .btn {
+        padding: 0px 10px;
+    }
+
+    /*Benefits Section*/
+    .benefits-section h2 {
+        font-size: 48px;
+        font-family: Helvetica;
+    }
+
+    .benefits-section .main p {
+        font-size: 24px;
+    }
+
+    .benefits-section .container-fluid {
+        max-width: 1248px;
+        width: 100%;
+        min-height: 620px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img {
+        width: 100%;
+        max-width: 550px;
+        min-height: 550px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img img {
+        width: 100%;
+        max-width: 500px;
+        min-height: 500px;
+        height: auto;
+    }
+
+    .benefits-section .svg-img svg {
+        bottom: 24px;
+        left: -24px;
+    }
+
+    .benefits-section h3 {
+        font-size: 18px;
+    }
+
+    .benefits-section p {
+        font-size: 16px;
+    }
+
+
+    .benefits-section ul li>div:first-child {
+        width: 56px;
+        height: 56px;
+    }
+
+    .benefits-section #l1 {
+        width: 81px;
+    }
+
+    .benefits-section #l2{
+        width: 56px;
+    }
+
+    .benefits-section #l3 {
+        width: 58px;
+    }
+
+    .benefits-section #l4 {
+        width: 60px;
+    }
+
+    .benefits-section ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 1400px) {
-    .zoom-container{
-        width:500px; 
-        height:500px;
+    /*Purchase Section*/
+    .purchase-section .product-info{
+        min-height: 674px;
+        height: auto;
     }
-    .purchase-section #package-carousel .carousel-img {
-    width: 172px;
-    height: 172px;
+     .purchase-section .thumnail-col{
+        width: 100%;
+        max-width: 110px;
+        min-height: 578px;
+        height: auto;
+    }
+     .purchase-section #thumb-up, .purchase-section #thumb-down{
+        width: 100%;
+        max-width: 110px;
+        min-height: 32px;
+        height: auto;
+    }
+    .purchase-section #thumbnail-list button{
+        padding: 7px;
+        width: 100%;
+        max-width: 94px;
+        min-height: 94px;
+        height: auto;
+    }
+    .purchase-section #thumbnail-list img{
+        width: 100%;
+        max-width: 76px;
+        min-height: 76px;
+        height: auto;
+    }
+
+    .purchase-section #thumbnail-list {
+    min-height: 485px;
+        height: auto;
+    scrollbar-width: none;
 }
+    .purchase-section #oneTimeBtnLg, #subscribeBtnLg{
+        padding: 10px 16px;
+    }
+
+    .purchase-section h2.price{
+        font-size: 36px;
+    }
+
+    .purchase-section .card {
+        width: 100%;
+        max-width: 237px;
+        min-height: 306px;
+        height: auto;
+    }
+
+    .purchase-section .popular-card {
+        min-height: 330px;
+        height: auto;
+    }
+
+    .purchase-section .org-price{
+        font-size: 24px;
+    }
+
+    .purchase-section #swipe-left, #swipe-right{
+        width: 100%;
+        max-width: 43px;
+        min-height: 143px;
+        height: auto;
+    }
+
+    .purchase-section .zoom-container {
+        width: 100%;
+        max-width: 500px;
+        min-height: 500px;
+        height: auto;
+    }
+
+    .purchase-section #package-carousel .carousel-img {
+        width: 100%;
+        max-width: 143px;
+        min-height: 143px;
+        height: auto;
+    }
+
+    .purchase-section .free-text{
+        font-size: 16px;
+    }
+    .purchase-section .subs-left-card, .purchase-section .subs-center-card {
+        width: 100%;
+        max-width: 241px;
+        min-height: 366px;
+        height: auto;
+    }
+    .purchase-section .savings-card{
+        width: 100%;
+        max-width: 243px;
+        min-height: 390px;
+        height: auto;
+    }
+    .purchase-section .feedback-list{
+        min-height: 187px;
+        height: auto;
+    }
 }

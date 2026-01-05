@@ -1,3 +1,17 @@
+// <!-------- Customers Review Section ------>
+const customersCarousel = document.getElementById('customers-carousel');
+if (customersCarousel) {
+    const dots = document.querySelectorAll('.dot-indicators .dot');
+
+    customersCarousel.addEventListener('slid.bs.carousel', function (event) {
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[event.to]?.classList.add('active');
+    });
+}
+
+
+// <!-------- Purchase Section ------>
+
 // Thumbnail click changes main image
 const thumbnails = document.querySelectorAll('.thumbnail-btn');
 const mainImg = document.getElementById('main-img');
@@ -34,7 +48,8 @@ updateButtons();
 // for zoom effects
 const container = document.querySelector('.zoom-container');
 
-container.addEventListener('mousemove', (e) => {
+if(container && mainImg){
+    container.addEventListener('mousemove', (e) => {
     const rect = container.getBoundingClientRect();
 
     const x = ((e.clientX - rect.left) / rect.width) * 100;
@@ -48,35 +63,34 @@ container.addEventListener('mouseleave', () => {
     mainImg.style.transformOrigin = 'center center';
     mainImg.style.transform = 'scale(1)';
 });
+}
 
 // for counter
 const carousel = document.getElementById('carousel-purchase');
-const counter = carousel.querySelector('.counter');
-const items = carousel.querySelectorAll('.carousel-item');
+if (carousel) {
+    const counter = carousel.querySelector('.counter');
+    const items = carousel.querySelectorAll('.carousel-item');
+     // for progress bar
+    const progressBar = document.getElementById('carousel-progress');
+    const totalItems = items.length;
 
-carousel.addEventListener('slid.bs.carousel', (e) => {
-    counter.textContent = `${e.to + 1} of ${items.length}`;
-});
+    const updateProgress = (index) => {
+        if (!progressBar) return;
+        const percent = ((index + 1) / totalItems) * 100;
+        progressBar.style.width = `${percent}%`;
+    };
 
-// for progress bar
-const progressBar = document.getElementById('carousel-progress');
-const totalItems = items.length;
+    // Initial state
+    updateProgress(0);
+    if (counter) counter.textContent = `1 of ${totalItems}`;
 
-function updateProgress(index) {
-    const percent = ((index + 1) / totalItems) * 100;
-    progressBar.style.width = `${percent}%`;
+    // Update on slide
+    carousel.addEventListener('slid.bs.carousel', (e) => {
+        const index = e.to;
+        if (counter) counter.textContent = `${index + 1} of ${totalItems}`;
+        updateProgress(index);
+    });
 }
-
-// Initial state
-updateProgress(0);
-
-// Update on slide
-carousel.addEventListener('slid.bs.carousel', (e) => {
-    const activeIndex = [...items].findIndex(item =>
-        item.classList.contains('active')
-    );
-    updateProgress(activeIndex);
-});
 
 // for toggle large screens
 const oneTimeBtnLg = document.getElementById('oneTimeBtnLg');
@@ -84,7 +98,8 @@ const subscribeBtnLg = document.getElementById('subscribeBtnLg');
 const oneTimeCardsLg = document.getElementById('oneTimeCardsLg');
 const subscribeCardsLg = document.getElementById('subscribeCardsLg');
 
-oneTimeBtnLg.addEventListener('click', () => {
+if(oneTimeBtnLg && subscribeBtnLg){
+    oneTimeBtnLg.addEventListener('click', () => {
     oneTimeCardsLg.classList.remove('d-none');
     oneTimeCardsLg.classList.add('d-lg-flex');
     subscribeCardsLg.classList.add('d-none');
@@ -109,6 +124,7 @@ subscribeBtnLg.addEventListener('click', () => {
     oneTimeBtnLg.classList.add('custom-btn-outline');
     oneTimeBtnLg.classList.remove('custom-btn', 'text-light');
 });
+}
 
 
 // for medium screen
@@ -117,7 +133,9 @@ const subscribeBtn = document.getElementById('subscribeBtn');
 const oneTimeCards = document.getElementById('oneTimeCards');
 const subscribeCards = document.getElementById('subscribeCards');
 
-oneTimeBtn.addEventListener('click', () => {
+
+if(oneTimeBtn&&subscribeBtn){
+    oneTimeBtn.addEventListener('click', () => {
     oneTimeCards.classList.remove('d-none');
     subscribeCards.classList.add('d-none');
 
@@ -138,7 +156,7 @@ subscribeBtn.addEventListener('click', () => {
     oneTimeBtn.classList.add('custom-btn-outline');
     oneTimeBtn.classList.remove('custom-btn', 'text-light');
 });
-
+}
 
 // Scroll buttons for package list
 

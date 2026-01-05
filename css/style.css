@@ -6,6 +6,8 @@
     --bg-icon: #1F3A5F;
     --border-list: rgba(0, 0, 0, 0.4);
     --bg-blur: rgba(0, 0, 0, 0.2);
+    --buy-now: #15803d;
+    --buy-now-hover: #166534;
 }
 
 @font-face {
@@ -13,13 +15,47 @@
     src: url(../fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf);
 }
 
-.video-section,
-.benefits-section {
+/* Video Section */
+.video-section {
     background-color: var(--dark-blue);
 }
 
-.video-section h2,
-.customers-review-section h1,
+.video-section .row {
+    border-radius: 0.5rem;
+}
+
+.video-section .text-col h2 {
+    color: var(--dark-blue);
+    font-size: 30px;
+}
+
+.video-section .text-col .text {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.video-section .text-col small {
+    color: #4b5563;
+}
+
+.video-section .text-col .semibold {
+    font-weight: 600;
+}
+
+.video-section .text-col .btn {
+    background-color: var(--buy-now);
+    border-radius: 0.5rem;
+    font-size: 18px;
+    outline: none;
+    box-shadow: none;
+}
+
+.video-section .text-col .btn:hover {
+    background-color: var(--buy-now-hover);
+}
+
+/* Customers Review Section */
+.customers-review-section h2,
 .customers-review-section .card-footer button {
     color: var(--dark-blue);
 }
@@ -32,17 +68,27 @@
     background-color: var(--bg-footer);
 }
 
-.card,
-.card .border {
+.customers-review-section .dot-indicators .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background-color: #ccc;
+}
+
+.customers-review-section .dot-indicators .dot.active {
+    background-color: var(--dark-blue);
+}
+
+.customers-review-section .card,
+.customers-review-section .card .border {
     border-color: var(--border-color);
     border-radius: 15px;
 }
 
-.dot-indicators .btn {
-    background-color: gray;
-}
-
-.dot-indicators .btn.active {
+/* Benefits Section */
+.benefits-section {
     background-color: var(--dark-blue);
 }
 
@@ -65,13 +111,10 @@
     transform: scale(1.1);
 }
 
+
+/* Purchase Section */
 .purchase-section h4 {
     color: var(--bg-footer);
-}
-
-.purchase-section #thumbnail-list {
-    height: 467px;
-    scrollbar-width: none;
 }
 
 .purchase-section #thumbnail-list .thumbnail-btn {
@@ -129,8 +172,8 @@
 }
 
 .purchase-section .progress {
-    width: 230px;
-    height: 5px;
+    width: 200px;
+    height: 4px;
 }
 
 .purchase-section .progress-bar {
@@ -184,14 +227,19 @@
     transition: opacity 0.3s ease;
 }
 
-.purchase-section #package-carousel{
+.purchase-section #package-carousel {
     overflow-y: hidden;
     max-width: 100%;
     scrollbar-width: none;
 }
 
-.purchase-section .rotate-right{
+.purchase-section .rotate-right {
     transform: rotate(90deg);
+}
+
+.purchase-section .popular-text{
+    color: var(--dark-blue);
+    font-style: italic;
 }
 
 .purchase-section #swipe-left,
