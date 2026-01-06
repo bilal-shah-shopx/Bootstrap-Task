@@ -1,23 +1,30 @@
-:root {
-    --dark-blue: #003D78;
-    --bg-footer: #0E4F9A;
-    --light-grey: #F2F3F6;
-    --border-color: #E6E7EB;
-    --bg-icon: #1F3A5F;
-    --border-list: rgba(0, 0, 0, 0.4);
-    --bg-blur: rgba(0, 0, 0, 0.2);
-    --buy-now: #15803d;
-    --buy-now-hover: #166534;
-}
-
 @font-face {
     font-family: custom-font;
     src: url(../fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf);
 }
 
+:root {
+    /* Brand colors */
+    --color-primary: #003D78;
+    --color-primary-dark: #0E4F9A;
+
+    /* Backgrounds */
+    --color-bg-muted: #F2F3F6;
+    --color-bg-icon: #1F3A5F;
+    --color-bg-overlay: rgba(0, 0, 0, 0.2);
+
+    /* Borders */
+    --color-border-default: #E6E7EB;
+    --color-border-hover: rgba(0, 0, 0, 0.4);
+
+    /* Actions */
+    --color-action-primary: #15803d;
+    --color-action-primary-hover: #166534;
+}
+
 /* Video Section */
 .video-section {
-    background-color: var(--dark-blue);
+    background-color: var(--color-primary);
 }
 
 .video-section .row {
@@ -25,7 +32,7 @@
 }
 
 .video-section .text-col h2 {
-    color: var(--dark-blue);
+    color: var(--color-primary);
     font-size: 30px;
 }
 
@@ -43,7 +50,7 @@
 }
 
 .video-section .text-col .btn {
-    background-color: var(--buy-now);
+    background-color: var(--color-action-primary);
     border-radius: 0.5rem;
     font-size: 18px;
     outline: none;
@@ -51,22 +58,47 @@
 }
 
 .video-section .text-col .btn:hover {
-    background-color: var(--buy-now-hover);
+    background-color: var(--color-action-primary-hover);
 }
 
 /* Customers Review Section */
+.customers-review-section .card-body .verified,
+.customers-review-section .carousel-next-btn,
+.customers-review-section .carousel-prev-btn,
+.customers-review-section .card-img-top,
+.customers-review-section .card-img {
+    width: 100%;
+    height: auto;
+}
+
+
 .customers-review-section h2,
 .customers-review-section .card-footer button {
-    color: var(--dark-blue);
+    color: var(--color-primary);
 }
 
 .customers-review-section {
-    background-color: var(--light-grey);
+    background-color: var(--color-bg-muted);
 }
 
 .customers-review-section .card-footer {
-    background-color: var(--bg-footer);
+    background-color: var(--color-primary-dark);
 }
+
+.customers-review-section .card-footer small {
+    font-size: 12px;
+}
+
+.customers-review-section .card-body .verified {
+        max-width: 16px;
+        min-height: 16px;
+    }
+
+.customers-review-section .carousel-next-btn,
+    .customers-review-section .carousel-prev-btn {
+        max-width: 32px;
+        min-height: 32px;
+    }
 
 .customers-review-section .dot-indicators .dot {
     width: 8px;
@@ -78,22 +110,60 @@
 }
 
 .customers-review-section .dot-indicators .dot.active {
-    background-color: var(--dark-blue);
+    background-color: var(--color-primary);
 }
 
 .customers-review-section .card,
 .customers-review-section .card .border {
-    border-color: var(--border-color);
+    border-color: var(--color-border-default);
     border-radius: 15px;
+}
+
+.customers-review-section .card {
+    height: auto;
+}
+
+.customers-review-section h2 {
+    font-size: 30px;
+}
+
+.customers-review-section .container-fluid {
+    width: 100%;
 }
 
 /* Benefits Section */
 .benefits-section {
-    background-color: var(--dark-blue);
+    background-color: var(--color-primary);
+}
+
+.benefits-section .container-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.benefits-section h3 {
+    font-size: 18px;
+}
+
+.benefits-section p {
+    font-size: 16px;
+}
+
+.benefits-section h2 {
+    font-size: 30px;
+    font-family: Helvetica;
+}
+
+.benefits-section .main p {
+    font-size: 24px;
+}
+
+.benefits-section .svg-img svg {
+    bottom: 24px;
 }
 
 .benefits-section li img {
-    background-color: var(--bg-icon);
+    background-color: var(--color-bg-icon);
 }
 
 .benefits-section .hover-translate {
@@ -111,10 +181,86 @@
     transform: scale(1.1);
 }
 
+.benefits-section .svg-img,
+.benefits-section .svg-img img {
+    object-fit: contain;
+}
 
 /* Purchase Section */
 .purchase-section h4 {
-    color: var(--bg-footer);
+    color: var(--color-primary-dark);
+}
+
+
+.purchase-section .package-carousel .carousel-img,
+.purchase-section .swipe-left,
+.purchase-section .swipe-right,
+.purchase-section .rotate-right,
+.purchase-section .zoom-container,
+.purchase-section .carousel-purchase-next-btn,
+.purchase-section .carousel-purchase-prev-btn,
+.purchase-section #thumb-up,
+.purchase-section #thumb-down,
+.purchase-section #thumbnail-list button,
+.purchase-section .thumnail-col {
+    width: 100%;
+    height: auto;
+}
+
+.purchase-section .carousel-purchase-next-btn,
+    .purchase-section .carousel-purchase-prev-btn {
+        max-width: 32px;
+        min-height: 32px;
+    }
+
+.purchase-section #thumbnail-list {
+    scrollbar-width: none;
+    height: auto;
+}
+
+.purchase-section #thumbnail-list img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.purchase-section h2.bag {
+    font-size: 20px;
+}
+
+.purchase-section .org-price {
+    font-size: 18px;
+}
+
+.purchase-section h2.price {
+    font-size: 20px;
+}
+
+.purchase-section h5.save {
+    font-size: 16px;
+}
+
+.purchase-section span.per-bag,
+.purchase-section h4.month {
+    font-size: 14px;
+}
+
+.purchase-section .free-text {
+    font-size: 12px;
+}
+
+.purchase-section .popular-text {
+    font-size: 12px;
+}
+
+.purchase-section .rotate-right {
+    max-width: 20px;
+    min-height: 20px;
+}
+
+.purchase-section .feedback-list,
+.purchase-section .product-info {
+    height: auto;
 }
 
 .purchase-section #thumbnail-list .thumbnail-btn {
@@ -123,22 +269,20 @@
 }
 
 .purchase-section #thumbnail-list .thumbnail-btn:hover {
-    border-color: var(--border-list);
+    border-color: var(--color-border-hover);
 }
 
 .purchase-section #thumbnail-list .thumbnail-btn.active {
-    border-color: var(--dark-blue);
+    border-color: var(--color-primary);
 }
 
 .purchase-section #thumbnail-list .thumbnail-btn:focus,
 .purchase-section #thumb-up,
 .purchase-section #thumb-down,
-.purchase-section #swipe-left,
-.purchase-section #swipe-right,
-.purchase-section #oneTimeBtn,
-.purchase-section #oneTimeBtnLg,
-.purchase-section #subscribeBtn,
-.purchase-section #subscribeBtnLg {
+.purchase-section .swipe-left,
+.purchase-section .swipe-right,
+.purchase-section .oneTimeBtn,
+.purchase-section .subscribeBtn{
     outline: none;
     box-shadow: none;
     border-color: inherit;
@@ -146,6 +290,11 @@
 
 .purchase-section .thumbnail-btn.active {
     border: 2px solid #0d4f9a;
+}
+
+.purchase-section .oneTimeBtn,
+.subscribeBtn {
+    padding: 10px 16px;
 }
 
 .purchase-section .zoom-container {
@@ -177,23 +326,23 @@
 }
 
 .purchase-section .progress-bar {
-    background-color: var(--dark-blue);
+    background-color: var(--color-primary);
     transition: width 0.4s ease;
 }
 
 .purchase-section .custom-btn {
-    background-color: var(--bg-footer);
+    background-color: var(--color-primary-dark);
 }
 
 .purchase-section .custom-btn-outline,
 .purchase-section .card {
-    border: 2px solid var(--bg-footer);
+    border: 2px solid var(--color-primary-dark);
     border-radius: 0px;
 }
 
 .purchase-section .card {
-    border: 4px solid var(--bg-footer);
-    border-radius: 0px;
+    border-width: 4px;
+    height: auto;
 }
 
 .purchase-section .subs-left-card {
@@ -213,21 +362,19 @@
 }
 
 .purchase-section .card-top {
-    background-color: var(--bg-footer)
+    background-color: var(--color-primary-dark)
 }
 
 .purchase-section .card-title {
-    color: var(--bg-footer)
+    color: var(--color-primary-dark)
 }
 
-.purchase-section #oneTimeCards,
-.purchase-section #oneTimeCardsLg,
-.purchase-section #subscribeCards,
-.purchase-section #subscribeCardsLg {
+.purchase-section .oneTimeCards,
+.purchase-section .subscribeCards {
     transition: opacity 0.3s ease;
 }
 
-.purchase-section #package-carousel {
+.purchase-section .package-carousel {
     overflow-y: hidden;
     max-width: 100%;
     scrollbar-width: none;
@@ -237,12 +384,12 @@
     transform: rotate(90deg);
 }
 
-.purchase-section .popular-text{
-    color: var(--dark-blue);
+.purchase-section .popular-text {
+    color: var(--color-primary);
     font-style: italic;
 }
 
-.purchase-section #swipe-left,
-.purchase-section #swipe-right {
-    background-color: var(--bg-blur);
+.purchase-section .swipe-left,
+.purchase-section .swipe-right {
+    background-color: var(--color-bg-overlay);
 }
