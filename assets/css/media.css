@@ -593,22 +593,22 @@
 
     .benefits-section #l1 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l2 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l3 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l4 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     /*Purchase Section*/
@@ -654,6 +654,7 @@
 
     .purchase-section .oneTimeCards button {
         max-width: 207px;
+        min-height: 40px;
     }
 
     .purchase-section .card {
@@ -707,6 +708,17 @@
 
     .purchase-section .feedback-list {
         min-height: 135px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     .benefits-section .container-fluid {
+        max-width: 1200px;
+        min-height: 620px;
+    }
+    .benefits-section .svg-img svg {
+        bottom: 24px;
+        left: -24px;
     }
 }
 
@@ -829,22 +841,22 @@
 
     .benefits-section #l1 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l2 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l3 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     .benefits-section #l4 {
         width: 100%;
-        max-width: 56px;
+        max-width: 63px;
     }
 
     /*Purchase Section*/

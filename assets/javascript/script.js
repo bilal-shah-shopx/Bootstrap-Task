@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 carousel.scrollBy({
-                    left: -scrollAmount,
+                    left: scrollAmount,
                     behavior: 'smooth'
                 });
             });
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
                 carousel.scrollBy({
-                    left: scrollAmount,
+                    left: -scrollAmount,
                     behavior: 'smooth'
                 });
             });
