@@ -256,11 +256,9 @@
     font-size: 14px;
 }
 
-.purchase-section .free-text {
-    font-size: 12px;
-}
 
-.purchase-section .popular-text {
+
+.purchase-section .free-text, .purchase-section .popular-text {
     font-size: 12px;
 }
 
