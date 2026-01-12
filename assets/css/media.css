@@ -350,7 +350,7 @@
         min-height: 811px;
     }
 
-    .purchase-section .thumnail-col {
+    .purchase-section .thumbnail-col {
         max-width: 102px;
         min-height: 560px;
     }
@@ -617,8 +617,8 @@
         min-height: 834px;
     }
 
-    .purchase-section .thumnail-col {
-        max-width: 102px;
+    .purchase-section .thumbnail-col {
+        max-width: 110px;
         min-height: 560px;
     }
 
@@ -864,7 +864,7 @@
         min-height: 674px;
     }
 
-    .purchase-section .thumnail-col {
+    .purchase-section .thumbnail-col {
         max-width: 110px;
         min-height: 578px;
     }
